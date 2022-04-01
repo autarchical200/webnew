@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website du lịch</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header start  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>Hưng</span> Travel</a>
+
+    <nav class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="#book">Đặt vé</a>
+        <a href="#packages">Địa điểm</a>
+        <a href="#gallery">Bộ sưu tập</a>
+        <a href="#review">Đánh giá</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="bạn muốn tìm kiếm...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>Đăng nhập</h3>
+        <input type="email" class="box" placeholder="Nhập email của bạn">
+        <input type="password" class="box" placeholder="Nhập mật khẩu">
+        <input type="submit" value="Dăng nhập ngay" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">lưu thông tin</label>
+        <p>quên mật khẩu? <a href="#">bấm vào để lấy mật khẩu</a></p>
+        <p>không có tài khoản? <a href="#">đăng kí ngay</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>tham gia ngay</h3>
+        <p>trải nghiệm những điều mới mẻ</p>
+        <a href="#" class="btn">Khám phá thêm</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="hung/vhl.mp4"></span>
+        <span class="vid-btn" data-src="hung/sapa.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="hung/vhl.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>Đ</span>
+        <span>ặ</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>v</span>
+        <span>é</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>
+        <span>y</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="hung/dulich3.png" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Nơi đến</h3>
+                <input type="text" placeholder="điền nơi bạn muốn du lịch...">
+            </div>
+            <div class="inputBox">
+                <h3>Số lượng</h3>
+                <input type="number" placeholder="số lượng người tham gia...">
+            </div>
+            <div class="inputBox">
+                <h3>Ngày đến</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>Ngày đi</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="đặt ngay">
+        </form>
+
+    </div>
+
+</section>
+    
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>đ</span>
+        <span>ị</span>
+        <span>a</span>
+        <span class="space"></span>
+        <span>đ</span>
+        <span>i</span>
+        <span>ể</span>
+        <span>m</span>
+        <span class="space"></span>
+        <span>h</span>
+        <span>o</span>
+        <span>t</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="hung/ha long.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Vịnh Hạ Long </h3>
+                <p>Vùng vịnh nổi tiếng nhất ở Việt Nam,địa điểm du lịch được UNESCO công nhận là di sản thiên nhiên văn hóa thế giới và nơi đó chính là Vịnh Hạ Long.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $12.00 <span>$17.00</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="hung/hoi_an_dem.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Phố cổ hội an </h3>
+                <p>Du lịch Hội An thì tham quan Phố cổ Hội An là chính rồi, bên cạnh đó bạn có thể kết hợp tắm biển ở Bãi biển An Bàng cách đó không xa, bãi biển Cửa Đại.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $13.00 <span>$20.00</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="hung/image6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Bà Na Hills</h3>
+                <p>Đến với Sun World Ba Na Hills, du khách sẽ được trải nghiệm khí hậu bốn mùa trong một ngày, chu du trên những tuyến cáp treo,...</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> $15.00 <span>$20.00</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="hung/dai-noi-hue.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Đại Nội Huế </h3>
+                <p>Huế - vùng đất cố đô mang đậm dấu ấn lịch sử dân tộc. Trong đó, đặc biệt phải kể để Đại Nội Huế nơi còn ghi dấu ấn văn hóa, kiến trúc độc đáo nhất định không thể bỏ lỡ trong hành trình du lịch Huế.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $10.00 <span>$12.00</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="hung/meyhomes-1-9993.png" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Đảo Phú Quốc</h3>
+                <p>Là hòn đảo lớn nhất Việt Nam phát triển về du lịch, Phú Quốc xứng danh là thiên đường biển đảo được ví như Maldives hay Hawaii của trời Tây. Tự hào lắm khi Việt nam mình có đảo Ngọc phú Quốc.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $20.00 <span>$25.00</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="hung/1635390091-sapa-trong-may-mu-16349480971052073044867-width900height600.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Sapa </h3>
+                <p>Là địa điểm du lịch Việt Nam nổi tiếng thu hút rất đông du khách trong và ngoài nước ghé thăm.Được coi là nơi đẹp và hùng vĩ bậc nhất miền Bắc, Sapa luôn thu hút lượng lớn khách du lịch quanh năm. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $25.00 <span>$30.00</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>B</span>
+        <span>ộ</span>
+        <span class="space"></span>
+        <span>s</span>
+        <span>ư</span>
+        <span>u</span>
+        <span class="space"></span>
+        <span>t</span>
+        <span>ậ</span>
+        <span>p</span>
+
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="hung/anh1.jpg" alt="">
+            <div class="content">
+                <h3>Hạ Long Quảng Ninh</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="hung/anh2.jpg" alt="">
+            <div class="content">
+                <h3>Hội An</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="hung/anh3.jpg" alt="">
+            <div class="content">
+                <h3>Quảng Bình</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="hung/anh4.jpg" alt="">
+            <div class="content">
+                <h3>Hà Nội</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="hung/anh5.jpg" alt="">
+            <div class="content">
+                <h3>Đà Nẵng</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="hung/an6.jpg" alt="">
+            <div class="content">
+                <h3>Huế</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="hung/anh7.jpg" alt="">
+            <div class="content">
+                <h3>Đà Lạt</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="hung/anh8.jpg" alt="">
+            <div class="content">
+                <h3>Sapa</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="hung/anh9.jpg" alt="">
+            <div class="content">
+                <h3>Phú Quốc</h3>
+                <a href="#" class="btn">xem thêm</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>Đ</span>
+        <span>á</span>
+        <span>n</span>
+        <span>h</span>
+        <span class="space"></span>
+        <span>G</span>
+        <span>i</span>
+        <span>á</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class=""> <!--swiper-slide-->
+                <div class="box">
+                    <img src="hung/st1.jpg" alt="">
+                    <h3>Sơn Tùng MTP</h3>
+                    <p>Hội An là một điểm đến thật tuyệt vời!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class=" ">
+                <div class="box">
+                    <img src="hung/ntt.jpg" alt="">
+                    <h3>nguyễn thu thủy</h3>
+                    <p>Huế là một điểm đến thật tuyệt vời!!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class=""> 
+                <div class="box">
+                    <img src="hung/hqh.jpg" alt="">
+                    <h3>Hồ Quang Hiếu</h3>
+                    <p>Sapa là một điểm đến thật tuyệt vời!!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="box">
+                    <img src="hung/tl.jpg" alt="">
+                    <h3>Nguyễn Tiến Linh</h3>
+                    <p>Đà Lạt là một điểm đến thật tuyệt vời!!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>L</span>
+        <span>i</span>
+        <span>ê</span>
+        <span>n</span>
+        <span class="space"></span>
+        <span>H</span>
+        <span>ệ</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="hung/anh2.png" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="tên">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="số điện thoại">
+                <input type="text" placeholder="chủ đề">
+            </div>
+            <textarea placeholder="tin nhắn phản hồi" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="gửi phản hồi">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Về chúng tôi</h3>
+            <p>Mong muốn những trải nghiệm tốt nhất.</p>
+        </div>
+        <div class="box">
+            <h3>Chi nhánh</h3>
+            <a href="#">Việt Nam</a>
+            <a href="#">Nhật Bản</a>
+            <a href="#">Hàn Quốc</a>
+            <a href="#">Lào</a>
+        </div>
+        <div class="box">
+            <h3>truy cập nhanh</h3>
+            <a href="#home">trang chủ</a>
+            <a href="#book">đặt vé</a>
+            <a href="#packages">địa điểm</a>
+            <a href="#gallery">bộ sưu tập</a>
+            <a href="#review">đánh giá</a>
+            <a href="#contact">liên hệ</a>
+        </div>
+        <div class="box">
+            <h3>theo dõi chúng tôi</h3>
+            <a href="facebook.com">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> <span> Email:hung.phanvan@phuxuan.edu.com </span> | Sđt: 0976661824 </h1>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script >
+    let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+let formBtn = document.querySelector('#login-btn');
+let loginForm = document.querySelector('.login-form-container');
+let formClose = document.querySelector('#form-close');
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+let videoBtn = document.querySelectorAll('.vid-btn');
+
+window.onscroll = () =>{
+    searchBtn.classList.remove('fa-times');
+    searchBar.classList.remove('active');
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+});
+
+searchBtn.addEventListener('click', () =>{
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
+});
+
+formBtn.addEventListener('click', () =>{
+    loginForm.classList.add('active');
+});
+
+formClose.addEventListener('click', () =>{
+    loginForm.classList.remove('active');
+});
+
+videoBtn.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('data-src');
+        document.querySelector('#video-slider').src = src;
+    });
+});
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+});
+
+var swiper = new Swiper(".brand-slider", {
+    spaceBetween: 20,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        450: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        991: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 5,
+        },
+      },
+});
+</script>
+
+<!-- custom js file link  -->
+
+
+</body>
+</html>
